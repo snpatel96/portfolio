@@ -8,7 +8,6 @@ import { Component } from '@angular/core';
 export class HeaderComponent {
   nav = true;
   links = ['home', 'about', 'portfolio', 'experience', 'contact'];
-
   onOpenNav() {
     this.nav = !this.nav;
   }
