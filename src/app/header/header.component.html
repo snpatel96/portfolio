@@ -1,0 +1,47 @@
+<div
+  class="flex justify-between items-center w-full h-20 px-8 text-white bg-gradient-to-r from-zinc-900 to-gray-900 bg-zinc-800 fixed"
+>
+  <h1 class="text-3xl font-inter">Snehal</h1>
+
+  <ul class="hidden md:flex">
+    <li
+      *ngFor="let link of links"
+      class="px-4 cursor-pointer capitalize font-medium text-slate-100"
+    >
+      {{ link }}
+    </li>
+  </ul>
+  <button
+    class="py-2 px-4 font-medium rounded-md bg-gradient-to-r from-cyan-500 to-teal-500 text-slate-100 hidden md:flex"
+  >
+    Resume
+  </button>
+  <div (click)="onOpenNav()" class="cursor-pointer z-10 md:hidden">
+    <div *ngIf="nav; else close" class="space-y-2">
+      <span class="block w-8 h-0.5 bg-gray-400"></span>
+      <span class="block w-5 h-0.5 bg-gray-400"></span>
+    </div>
+    <ng-template #close>
+      <ion-icon class="text-gray-400 text-4xl" name="close-outline"></ion-icon>
+    </ng-template>
+  </div>
+
+  <ul
+    *ngIf="!nav"
+    class="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-zinc-900 to-gray-900"
+  >
+    <li
+      *ngFor="let link of links"
+      class="px-4 cursor-pointer capitalize py-6 text-4xl text-slate-100"
+    >
+      {{ link }}
+    </li>
+    <li>
+      <button
+        class="mt-6 py-3 px-6 font-medium rounded-md text-4xl bg-gradient-to-r from-cyan-500 to-teal-500 text-slate-100"
+      >
+        Resume
+      </button>
+    </li>
+  </ul>
+</div>
