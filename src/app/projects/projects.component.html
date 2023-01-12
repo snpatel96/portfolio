@@ -1,107 +1,242 @@
 <div
-  class="px-4 md:px-20 w-full md:h-screen bg-gradient-to-r from-zinc-900 to-gray-900 text-slate-200 font-inter"
+  class="px-4 md:px-20 w-full bg-gradient-to-r from-zinc-900 to-gray-900 text-slate-200 font-inter"
 >
-  <div
-    class="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full"
-  >
-    <div class="pb-8">
+  <div class="max-w-screen-lg p-4 mx-auto flex flex-col w-full h-full">
+    <div class="pb-8 md:pt-8">
       <p class="text-4xl font-bold inline border-b-4 border-slate-500">
         Portfolio
       </p>
       <p class="py-6">Check out some of my work right here!</p>
     </div>
 
-    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-2">
-      <div class="shadow-md shadow-slate-600 rounded-lg">
-        <img
-          src="assets/hero-1.png"
-          alt=""
-          class="rounded-md duration-200 hover:scale-105"
-        />
-        <div class="flex items-center justify-center">
-          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-            Demo
-          </button>
-          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-            Code
-          </button>
+    <div>
+      <div>
+        <!-- project -1 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border">
+          <div class="border">
+            <img src="assets/email.png" alt="" />
+          </div>
+          <div class="border">
+            <div class="flex flex-col items-center p-4">
+              <h3
+                class="text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500"
+              >
+                Email Client
+              </h3>
+              <p class="mt-8 text-center tracking-wide">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+                reprehenderit magnam, cumque numquam odit dignissimos labore
+                incidunt ut rerum natus tempora blanditiis iusto assumenda quos
+                explicabo molestiae accusantium sunt enim.
+              </p>
+              <div class="text-3xl flex items-center gap-5 py-8">
+                <ion-icon name="logo-html5" class="text-red-500"></ion-icon>
+                <ion-icon name="logo-css3" class="text-blue-600"></ion-icon>
+                <img
+                  src="assets/ts-logo-128.svg"
+                  height="28px"
+                  width="28px"
+                  alt=""
+                  class="inline-block"
+                />
+                <ion-icon name="logo-angular" class="text-red-600"></ion-icon>
+                <ion-icon name="logo-nodejs" class="text-green-500"></ion-icon>
+              </div>
+              <div class="text-3xl flex items-center gap-5">
+                <a
+                  href="https://snpatel96.github.io/ng-email-client/"
+                  target="_blank"
+                  ><ion-icon
+                    name="eye"
+                    class="text-blue-400 flex items-center"
+                  ></ion-icon
+                ></a>
+                <a
+                  href="https://github.com/snpatel96/ng-email-client"
+                  target="_blank"
+                  class="flex items-center"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="shadow-md shadow-slate-600 rounded-lg">
-        <img
-          src="assets/hero-1.png"
-          alt=""
-          class="rounded-md duration-200 hover:scale-105"
-        />
-        <div class="flex items-center justify-center">
-          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-            Demo
-          </button>
-          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-            Code
-          </button>
+
+        <!-- project -2 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border">
+          <div class="border">
+            <img src="assets/cart.png" alt="" />
+          </div>
+          <div class="border">
+            <div class="flex flex-col items-center p-4">
+              <h3
+                class="text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500"
+              >
+                Ecommerce Cart
+              </h3>
+              <p class="mt-8 text-center tracking-wide">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+                reprehenderit magnam, cumque numquam odit dignissimos labore
+                incidunt ut rerum natus tempora blanditiis iusto assumenda quos
+                explicabo molestiae accusantium sunt enim.
+              </p>
+              <div class="text-3xl flex items-center gap-5 py-8">
+                <ion-icon name="logo-html5" class="text-red-500"></ion-icon>
+                <img
+                  src="assets/tailwind-icon.png"
+                  height="28px"
+                  width="28px"
+                  alt=""
+                  class="inline-block"
+                />
+                <img
+                  src="assets/ts-logo-128.svg"
+                  height="28px"
+                  width="28px"
+                  alt=""
+                  class="inline-block"
+                />
+                <ion-icon name="logo-angular" class="text-red-600"></ion-icon>
+              </div>
+              <div class="text-3xl flex items-center gap-5">
+                <a
+                  href="https://snpatel96.github.io/ng-ecommerce/home"
+                  target="_blank"
+                  ><ion-icon
+                    name="eye"
+                    class="text-blue-400 flex items-center"
+                  ></ion-icon
+                ></a>
+                <a
+                  href="https://github.com/snpatel96/ng-ecommerce"
+                  target="_blank"
+                  class="flex items-center"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="shadow-md shadow-slate-600 rounded-lg">
-        <img
-          src="assets/hero-1.png"
-          alt=""
-          class="rounded-md duration-200 hover:scale-105"
-        />
-        <div class="flex items-center justify-center">
-          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-            Demo
-          </button>
-          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-            Code
-          </button>
-        </div>
-      </div>
-      <div class="shadow-md shadow-slate-600 rounded-lg">
-        <img
-          src="assets/hero-1.png"
-          alt=""
-          class="rounded-md duration-200 hover:scale-105"
-        />
-        <div class="flex items-center justify-center">
-          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-            Demo
-          </button>
-          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-            Code
-          </button>
-        </div>
-      </div>
-      <div class="shadow-md shadow-slate-600 rounded-lg">
-        <img
-          src="assets/hero-1.png"
-          alt=""
-          class="rounded-md duration-200 hover:scale-105"
-        />
-        <div class="flex items-center justify-center">
-          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-            Demo
-          </button>
-          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-            Code
-          </button>
-        </div>
-      </div>
-      <div class="shadow-md shadow-slate-600 rounded-lg">
-        <img
-          src="assets/hero-1.png"
-          alt=""
-          class="rounded-md duration-200 hover:scale-105"
-        />
-        <div class="flex items-center justify-center">
-          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-            Demo
-          </button>
-          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
-            Code
-          </button>
+
+        <!-- project -3 -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 border">
+          <div class="border">
+            <img src="assets/weather.png" alt="" />
+          </div>
+          <div class="border">
+            <div class="flex flex-col items-center p-4">
+              <h3
+                class="text-4xl font-semibold bg-clip-text text-transparent bg-gradient-to-r from-cyan-500 to-blue-500"
+              >
+                Weather App
+              </h3>
+              <p class="mt-8 text-center tracking-wide">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic
+                reprehenderit magnam, cumque numquam odit dignissimos labore
+                incidunt ut rerum natus tempora blanditiis iusto assumenda quos
+                explicabo molestiae accusantium sunt enim.
+              </p>
+              <div class="text-3xl flex items-center gap-5 py-8">
+                <ion-icon name="logo-html5" class="text-red-500"></ion-icon>
+                <img
+                  src="assets/tailwind-icon.png"
+                  height="28px"
+                  width="28px"
+                  alt=""
+                  class="inline-block"
+                />
+                <img
+                  src="assets/ts-logo-128.svg"
+                  height="28px"
+                  width="28px"
+                  alt=""
+                  class="inline-block"
+                />
+                <ion-icon name="logo-angular" class="text-red-600"></ion-icon>
+              </div>
+              <div class="text-3xl flex items-center gap-5">
+                <a
+                  href="https://snpatel96.github.io/ng-weather-app/"
+                  target="_blank"
+                  ><ion-icon
+                    name="eye"
+                    class="text-blue-400 flex items-center"
+                  ></ion-icon
+                ></a>
+                <a
+                  href="https://github.com/snpatel96/ng-weather-app"
+                  target="_blank"
+                  class="flex items-center"
+                  ><ion-icon name="logo-github"></ion-icon
+                ></a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- <div class="grid sm:grid-cols-2 gap-8 px-12 sm:px-2">
+      <div class="shadow-md rounded-lg">
+        <img
+          src="assets/email.png"
+          alt=""
+          class="rounded-md duration-200 hover:scale-105"
+        />
+        <div class="flex items-center justify-center">
+          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+            Demo
+          </button>
+          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+            Code
+          </button>
+        </div>
+      </div>
+      <div class="shadow-md shadow-slate-600 rounded-lg">
+        <img
+          src="assets/cart.png"
+          alt=""
+          class="rounded-md duration-200 hover:scale-105"
+        />
+        <div class="flex items-center justify-center">
+          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+            Demo
+          </button>
+          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+            Code
+          </button>
+        </div>
+      </div>
+      <div class="shadow-md shadow-slate-600 rounded-lg">
+        <img
+          src="assets/hero-1.png"
+          alt=""
+          class="rounded-md duration-200 hover:scale-105"
+        />
+        <div class="flex items-center justify-center">
+          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+            Demo
+          </button>
+          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+            Code
+          </button>
+        </div>
+      </div>
+      <div class="shadow-md shadow-slate-600 rounded-lg">
+        <img
+          src="assets/hero-1.png"
+          alt=""
+          class="rounded-md duration-200 hover:scale-105"
+        />
+        <div class="flex items-center justify-center">
+          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+            Demo
+          </button>
+          <button class="w-1/2 px-6 py-3 m-4 duration-200 hover:scale-105">
+            Code
+          </button>
+        </div>
+      </div>
+    </div> -->
   </div>
 </div>
