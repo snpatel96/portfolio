@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,8 +8,26 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   nav = true;
-  links = ['home', 'about', 'portfolio', 'experience', 'contact'];
+  links = ['home', 'about', 'portfolio', 'skills', 'contact'];
   onOpenNav() {
+    this.nav = !this.nav;
+  }
+
+  constructor(private scroller: ViewportScroller) {}
+  onClick(link: string) {
+    document.getElementById(link)?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
+  }
+
+  onClickMobile(link: string) {
+    document.getElementById(link)?.scrollIntoView({
+      behavior: 'smooth',
+      block: 'start',
+      inline: 'nearest',
+    });
     this.nav = !this.nav;
   }
 }
